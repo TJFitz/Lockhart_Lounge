@@ -1,4 +1,4 @@
-# Project 2
+# The Daring Penguins
 
  - As a restaurant aficionado
  - I WANT to be able to book a table, order online, view categorized menu items and read through other relevant information on my favorite restaurant’s website
