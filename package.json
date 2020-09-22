@@ -21,6 +21,7 @@
   "dependencies": {
     "@types/sequelize": "^4.28.9",
     "config": "^3.3.1",
+    "eslint": "^7.9.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.1.0",
     "mysql": "^2.18.1",
