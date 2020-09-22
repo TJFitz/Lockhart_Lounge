@@ -13,7 +13,7 @@ app.set("view engine", "handlebars");
 require("./routes/html_routes.js")(app);
 require("./routes/menu_routes.js")(app);
 
-db.sequelize.sync({ force: false }).then(function () {
+db.sequelize.sync().then(function () {
   app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
   });
