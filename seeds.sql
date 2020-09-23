@@ -1,5 +1,7 @@
 USE restaurantdb;
 
+INSERT INTO Bookings (name, email, phone, qty, message) VALUES ("Steve and Company", "stevesemail@email.com", 1111111111, 000, "Message from Steve");
+
 INSERT INTO Menu (category) VALUES ("test menu");
 
 INSERT INTO Appetizers (name, description, price, tags, image, MenuId) VALUES ("Appetizer 1", "This is a description of an appetizer", 3.99, "salad", "link goes here", 1);
