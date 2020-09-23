@@ -1,5 +1,7 @@
 USE restaurantdb;
 
+INSERT INTO Bookings (name, email, phone, qty, message) VALUES ("Steve and Company", "stevesemail@email.com", 1111111111, 000, "Message from Steve");
+
 INSERT INTO Menu (category) VALUES ("test menu");
 
 INSERT INTO Appetizers (name, description, price, tags, image, MenuId) VALUES ("Appetizer 1", "This is a description of an appetizer", 3.99, "salad", "link goes here", 1);
@@ -32,12 +34,12 @@ INSERT INTO Desserts (name, description, price, tags, image, MenuId) VALUES ("De
 
 INSERT INTO Desserts (name, description, price, tags, image, MenuId) VALUES ("Dessert 5", "This is a description of an dessert", 10.99, "specialty", "link goes here", 1);
 
-INSERT INTO Drinks (name, description, price, tags, image, MenuId) VALUES ("Drink 1", "This is a description of an drink", 10.99, "specialty", "link goes here", 1);
+INSERT INTO Drinks (name, description, price, tags, image, MenuId) VALUES ("Drink 1", "This is a description of an drink", 2.99, "tea", "link goes here", 1);
 
-INSERT INTO Drinks (name, description, price, tags, image, MenuId) VALUES ("Drink 2", "This is a description of an drink", 10.99, "specialty", "link goes here", 1);
+INSERT INTO Drinks (name, description, price, tags, image, MenuId) VALUES ("Drink 2", "This is a description of an drink", 3.99, "soda", "link goes here", 1);
 
-INSERT INTO Drinks (name, description, price, tags, image, MenuId) VALUES ("Drink 3", "This is a description of an drink", 10.99, "specialty", "link goes here", 1);
+INSERT INTO Drinks (name, description, price, tags, image, MenuId) VALUES ("Drink 3", "This is a description of an drink", 3.99, "alcohol", "link goes here", 1);
 
-INSERT INTO Drinks (name, description, price, tags, image, MenuId) VALUES ("Drink 4", "This is a description of an drink", 10.99, "specialty", "link goes here", 1);
+INSERT INTO Drinks (name, description, price, tags, image, MenuId) VALUES ("Drink 4", "This is a description of an drink", 5.99, "alcohol", "link goes here", 1);
 
-INSERT INTO Drinks (name, description, price, tags, image, MenuId) VALUES ("Drink 5", "This is a description of an drink", 10.99, "specialty", "link goes here", 1);
+INSERT INTO Drinks (name, description, price, tags, image, MenuId) VALUES ("Drink 5", "This is a description of an drink", 7.99, "alcohol", "link goes here", 1);
