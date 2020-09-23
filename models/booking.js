@@ -27,4 +27,5 @@ module.exports = function (sequelize, DataTypes) {
         type: DataTypes.DATE,
         defaultValue: DataTypes.DATE.NOW,
       }
-    });
+    }
+    )};
