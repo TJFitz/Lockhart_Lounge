@@ -21,7 +21,6 @@ html {
     font-family: var(--body-font);
     font-size: 10px;
     color: var(--body-font-color);
-    scroll-behavior: smooth;
     max-width: 100%;
     overflow-x: hidden;
 }
