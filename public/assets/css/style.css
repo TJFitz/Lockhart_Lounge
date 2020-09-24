@@ -600,6 +600,29 @@ hr {
     height: 28rem;
 }
 
+.contact-icon {
+    color: var(--secondary-font-color);
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+#city {
+    margin-top: 0;
+}
+
+.border-right {
+    border-right: 2px solid var(--secondary-font-color);
+}
+
 
 /* Media Queries */
 @media screen and (min-width: 900px) {
