@@ -18,12 +18,14 @@
 }
 
 html {
+
   font-family: var(--body-font);
   font-size: 10px;
   color: var(--body-font-color);
   scroll-behavior: smooth;
   max-width: 100%;
   overflow-x: hidden;
+
 }
 
 section {
@@ -652,11 +654,28 @@ hr {
 
 /* Animations */
 @keyframes slideIn {
-  0% {
-    transform: skewX(53deg) translateX(-500px);
-  }
 
-  100% {
-    transform: skew(0deg);
-  }
+/* Loading Screen Wrapper */
+
+.spinner-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #af8b55;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
