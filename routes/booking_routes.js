@@ -13,6 +13,8 @@ module.exports = function (app) {
       name: booking.name,
       email: booking.email,
       phone: booking.phone,
+      date: booking.date,
+      time: booking.time,
       qty: booking.qty,
       message: booking.message,
       createdAt: booking.createdAt,
