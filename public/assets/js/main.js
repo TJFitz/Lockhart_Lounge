@@ -30,19 +30,15 @@ $(() => {
       cartArr.push(item.name);
       total += item.price;
     });
-    let stringCart = cartArr.join("");
-    let newTotal = total.toString().split("");
-    let finalTotal = "";
-    newTotal.forEach((char) => {
-      if (char !== ".") {
-        finalTotal += char;
-      }
-    });
-    let finalNum = parseInt(finalTotal);
+    let stringCart = cartArr.join(" ");
+    let newTotal = total * 100;
+
     let finalItem = {
       items: stringCart,
-      total: finalNum,
+      total: newTotal,
     };
+
+    localStorage.clear();
 
     $.ajax("/create-session", {
       method: "POST",
@@ -51,9 +47,6 @@ $(() => {
       .then(function (response) {
         return stripe.redirectToCheckout({ sessionId: response.id });
       })
-      // .then(function (session) {
-      //   return stripe.redirectToCheckout({ sessionId: session.id });
-      // })
       .then(function (result) {
         // If redirectToCheckout fails due to a browser or network
         // error, you should display the localized error message to your
@@ -65,7 +58,34 @@ $(() => {
       .catch(function (error) {
         console.error("Error:", error);
       });
+  });
 
-    localStorage.clear();
+  // table booking
+
+  $("#bookTable").on("click", (event) => {
+    event.preventDefault();
+    let name = $("#name").val().trim();
+    let email = $("#email").val().trim();
+    let phone = $("#phone").val().trim();
+    let date = $("#date").val().trim();
+    let time = $("#time").val().trim();
+    let people = $("#people").val().trim();
+    let message = $("#message").val().trim();
+    let bookingObj = {
+      name: name,
+      email: email,
+      phone: phone,
+      date: date,
+      time: time,
+      qty: people,
+      message: message,
+    };
+    $.ajax("/api/booking", {
+      type: "POST",
+      data: bookingObj,
+    }).then(() => {
+      console.log("your reservation was accepted");
+      location.reload();
+    });
   });
 });

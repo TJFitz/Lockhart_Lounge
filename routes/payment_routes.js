@@ -1,5 +1,5 @@
 const db = require("../models");
-const YOUR_DOMAIN = "http://localhost:8080";
+const YOUR_DOMAIN = "http://localhost:3000";
 
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
@@ -18,7 +18,9 @@ module.exports = function (app) {
             currency: "usd",
             product_data: {
               name: req.body.items,
-              images: ["https://i.imgur.com/EHyR2nP.png"],
+              images: [
+                "https://www.pexels.com/photo/photo-of-different-empty-glasses-on-table-1484514/",
+              ],
             },
             unit_amount: req.body.total,
           },
@@ -26,8 +28,8 @@ module.exports = function (app) {
         },
       ],
       mode: "payment",
-      success_url: `${YOUR_DOMAIN}/success.html`,
-      cancel_url: `${YOUR_DOMAIN}/cancel.html`,
+      success_url: `${YOUR_DOMAIN}/success`,
+      cancel_url: `${YOUR_DOMAIN}/cancel`,
     });
     res.json({ id: session.id });
   });

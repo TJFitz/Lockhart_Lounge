@@ -660,12 +660,23 @@ hr {
   color: #ffffff;
 }
 
-.addToCart:hover {
+.addToCart:hover,
+#checkout:hover {
   box-shadow: 0px 0px 3px 3px #ffffff44;
 }
 
-.addToCart:active {
+.addToCart:active,
+#checkout:active {
   background-color: #3b3b3bab;
+}
+
+#checkout {
+  margin-top: 2vh;
+  background-color: #202020ab;
+  color: #ffffff;
+  font-size: 2vh;
+  height: 8vh;
+  width: 50%;
 }
 
 /* Animations */

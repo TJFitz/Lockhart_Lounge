@@ -55,4 +55,12 @@ module.exports = function (app) {
       res.render("order", menuObj);
     });
   });
+
+  app.get("/success", (req, res) => {
+    res.render("success");
+  });
+
+  app.get("/cancel", (req, res) => {
+    res.render("cancel");
+  });
 };
