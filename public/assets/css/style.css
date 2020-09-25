@@ -446,7 +446,7 @@ header {
 }
 
 .menu-headline {
-  color: #fff;
+  color: var(--main-font-color-dark);
   line-height: 1;
   font-size: 4.5rem;
   font-family: var(--main-font);
@@ -460,6 +460,101 @@ header {
 #menu-outer {
   height: 84px;
   background: url(images/bar-bg.jpg) repeat-x;
+}
+
+.menu .menu-item {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #343a40;
+  position: relative;
+  overflow: hidden;
+}
+.menu .menu-item .item-info {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+.menu .menu-item .item-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  transition: bottom 0.4s;
+}
+.menu .menu-item .item-content h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+  font-family: var(--main-font);
+  text-transform: uppercase;
+}
+.menu .menu-item .item-content span {
+  font-family: var(--main-font);
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+.menu .menu-item .online-order {
+  position: absolute;
+  left: 0;
+  bottom: -38px;
+  right: 0;
+  height: 48px;
+  transition: bottom ease-in-out 0.4s;
+  text-align: center;
+}
+.menu .menu-item .online-order a {
+  transition: color 0.3s;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+}
+.menu .menu-item .online-order a:hover {
+  color: #cda45e;
+}
+.menu .menu-item:hover .item-info {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  opacity: 1;
+  transition: 0.4s;
+}
+.menu .menu-item:hover .item-content {
+  bottom: 60px;
+  transition: bottom 0.4s;
+}
+.menu .menu-item:hover .online-order {
+  bottom: 0;
+  transition: bottom ease-in-out 0.4s;
+}
+.menu-img {
+  width: 410px;
+  height: 310px;
+  transition: all ease-in-out 0.4s;
+}
+.menu-btn {
+  font-size: 1rem !important;
+  background-color: transparent;
+  margin-left: 30px;
+  padding: 0.9rem 1.8rem;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 0.4rem;
+  transition: background-color 0.5s;
+  animation: slideIn 0.7s ease-in;
+}
+.menu-btn:hover,
+.menu-btn:focus {
+  color: #ffffff !important;
+  background-color: var(--secondary-font-color);
 }
 
 .table {
