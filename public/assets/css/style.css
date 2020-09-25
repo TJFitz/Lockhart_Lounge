@@ -595,7 +595,7 @@ hr {
   margin-bottom: 3.5rem;
 }
 
-.map {
+#map {
   width: 100vw;
   height: 28rem;
 }
@@ -648,6 +648,24 @@ hr {
     left: 0;
     bottom: -3px;
   }
+}
+
+/* online order stuff */
+
+.addToCart {
+  background-color: #202020ab;
+  font-family: var(--body-font);
+  font-size: 2vh;
+  height: 6vh;
+  color: #ffffff;
+}
+
+.addToCart:hover {
+  box-shadow: 0px 0px 3px 3px #ffffff44;
+}
+
+.addToCart:active {
+  background-color: #3b3b3bab;
 }
 
 /* Animations */

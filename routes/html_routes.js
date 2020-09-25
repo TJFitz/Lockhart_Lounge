@@ -28,4 +28,31 @@ module.exports = function (app) {
       res.render("index", menuObj);
     });
   });
+
+  app.get("/order", (req, res) => {
+    db.Menu.findAll({
+      where: {
+        id: 1,
+      },
+      include: [
+        { model: db.Appetizer },
+        { model: db.Entree },
+        { model: db.Dessert },
+        { model: db.Drink },
+      ],
+    }).then((dbMenu) => {
+      let menuArr = [];
+      let menuObj = {
+        menu: menuArr,
+      };
+      for (const [key, value] of Object.entries(dbMenu[0])) {
+        if (Array.isArray(value)) {
+          value.forEach((element) => {
+            menuArr.push(element.dataValues);
+          });
+        }
+      }
+      res.render("order", menuObj);
+    });
+  });
 };
