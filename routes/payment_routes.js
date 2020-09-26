@@ -1,5 +1,5 @@
 const db = require("../models");
-const YOUR_DOMAIN = "http://localhost:3000";
+const YOUR_DOMAIN = "https://thedaringpenguins.herokuapp.com";
 
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
