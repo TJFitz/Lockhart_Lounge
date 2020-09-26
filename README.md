@@ -12,7 +12,7 @@
 * [Support](#support)
 
 ## Description
-Burger-Logger is an all-in-one restaurant application that provides users with a way to book reservations, view menu items and order online with ease.
+Lockhart Lounge is an all-in-one restaurant application that provides users with a way to book reservations, view menu items and order online with ease.
 
 ## User Story
 As a restaurant aficionado
