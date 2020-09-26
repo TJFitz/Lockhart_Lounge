@@ -1,0 +1,225 @@
+<!-- Header -->
+<header>
+    <div class="container">
+        <nav class="nav">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <p class="logo">LOCKHART <span><i class="fas fa-seedling"></i></span> LOUNGE</p>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#discover" class="nav-link">Our Story</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reservations" class="nav-link">Reservations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- Header ends -->
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="container">
+        <h2 class="sub-headline">Welcome</h2>
+        <h1 class="headline">Lockhart Lounge</h1>
+        <div class="headline-description">
+            <div class="separator">
+                <div class="line line-left"></div>
+                <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                <div class="line line-right"></div>
+            </div>
+            <div class="single-animation">
+                <a href="/order" class="btn cta-btn">Order for Pickup</a>
+                <span><a href="#reservations" class="btn cta-btn">Reserve Table</a></span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Section Ends -->
+
+<!-- Discover Section -->
+<section id="discover" class="discover">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="body-sub-headline">Discover <span class="line">--------</span></h2>
+                <h1 class="body-headline">Our Story</h1>
+                <br>
+                <p class="lead">We serve simple food, really well. Lockhart Lounge blends unforgettable recipes
+                    with
+                    an inviting atmosphere to create a rich experience for our patrons each and every time. We
+                    are a
+                    group of people who are passionate about creating good food and good vibes. Come relish in
+                    the
+                    fun with us.</p>
+                <br>
+                <p class="lead icon-text"><i class="fab fa-pagelines icon-list"></i><span> Sustainably-sourced
+                        ingredients straight from local farms</span></p>
+                <p class="lead icon-text"><i class="fas fa-cocktail icon-list"></i><span> Signature drinks that
+                        are
+                        sure to
+                        impress</span></p>
+                <p class="lead icon-text"><i class="fas fa-utensils icon-list"></i><span> Hand crafted recipes
+                        made
+                        with you
+                        in
+                        mind</span></p>
+                <p class="lead icon-text"><i class="fas fa-couch icon-list"></i><span> Kick back and relax kind
+                        of
+                        environment</span></p>
+
+            </div>
+            <div class="col-md-6 about-img">
+                <img id="aboutImg"
+                    src="https://images.squarespace-cdn.com/content/v1/53a05cdee4b0c1bc44841a7b/1542171727651-BVFKHUH2MO5HMVF2HJRZ/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/101+Food+Photography+Tips"
+                    alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Discover Section Ends -->
+
+
+<!-- Menu Section -->
+<section id="menu" class="menu">
+    <div class="container">
+        <div>
+            <h2 class="menu-sub-headline">Menu <span class="line">--------</span></h2>
+            <h1 class="menu-headline">Our Tasty Menu</h1>
+            <br>
+        </div>
+
+        <div class="row">
+
+            {{#each menu}}
+
+            <div id="targetLink" class="col-md-3">
+                <div class="card text-center" style="width: 25rem;">
+                    <img src="{{this.image}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{this.name}}</h4>
+                        <hr>
+                        <p class="card-text">{{this.description}}</p>
+                        <p class="card-text">${{this.price}} <span><i class="fas fa-seedling"></i></span>{{this.tags}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            {{/each}}
+
+
+</section>
+<!-- Menu Section Ends -->
+
+<!-- Reservations Section -->
+<section id="reservations" class="reservations">
+    <div class="container">
+        <div>
+            <h2 class="reservations-sub-headline">Reservations <span class="line">--------</span></h2>
+            <h1 class="reservations-headline">Book A Table</h1>
+            <br>
+        </div>
+        <form role="form" action="" class="php-email-form">
+            <div class="form-row">
+                <div class="col-lg-4 .col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                        data-rule="minlen:4" data-msg="Please enter at least 4 characters">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 .col-md-6 form-group">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Your Email"
+                        data-rule="email" data-msg="Please enter a valid email">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 .col-md-6 form-group">
+                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Your Phone"
+                        data-rule="minlen:10" data-msg="Please enter at least 10 characters">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 .col-md-6 form-group">
+                    <input type="text" name="date" class="form-control" id="date" placeholder="Date"
+                        data-rule="minlen:4" data-msg="Please enter at least 4 characters">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 .col-md-6 form-group">
+                    <input type="text" name="time" class="form-control" id="time" placeholder="Time"
+                        data-rule="minlen:4" data-msg="Please enter at least 4 characters">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 .col-md-6 form-group">
+                    <input type="number" name="people" class="form-control" id="people" placeholder="# of People"
+                        data-rule="minlen:1" data-msg="Please enter at least 1 character">
+                    <div class="validate"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" rows="5" class="form-control" placeholder="Message"></textarea>
+            </div>
+            <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your booking request was sent. We'll be in touch shortly to confirm your
+                    reservation. Thank you!</div>
+            </div>
+            <div class="text-center"><button id="bookTable" type="submit">Book a Table</button></div>
+    </div>
+    </form>
+    </div>
+</section>
+<!-- Reservation Section Ends -->
+
+<!-- Gallery Section -->
+<section class="gallery" id="gallery">
+    <div class="container">
+        <div>
+            <h2 class="gallery-sub-headline">Gallery <span class="line">--------</span></h2>
+            <h1 class="gallery-headline">Check us out</h1>
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/1267696/pexels-photo-1267696.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    class="d-block w-100 gallery-img" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/2788792/pexels-photo-2788792.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    class="d-block w-100 gallery-img" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/1058277/pexels-photo-1058277.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    class="d-block w-100 gallery-img" alt="">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/761854/pexels-photo-761854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    class="d-block w-100 gallery-img" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/1537635/pexels-photo-1537635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    class="d-block w-100 gallery-img" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.pexels.com/photos/159291/beer-machine-alcohol-brewery-159291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    class="d-block w-100 gallery-img" alt="">
+            </div>
+        </div>
+</section>
+<!-- End Gallery Section -->
+
