@@ -34,8 +34,11 @@ To use this application, you must first create your MySQL database by running bo
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 ## Visuals
-![](assets/burger1.png)
-![](assets/burger2.png)
+![](ll-1.jpg)
+![](ll-2.jpg)
+![](ll-3.jpg)
+![](ll-4.jpg)
+
 
 ## Deployment
 https://thedaringpenguins.herokuapp.com/
@@ -56,15 +59,15 @@ For questions, comments or concerns regarding the Lockhart Lounge application, p
 | TJ
 ------------ 
 
-[<img src="https://avatars0.githubusercontent.com/u/65209786?s=400&u=cb17a056cc6e4ab1216a4b19a6d190d5a6727651&v=4" width="100px;"/><br /><sub><b>TJ Fitzpatrick</b></sub>](https://github.com/TJFitz)<br />[💻](https://github.com/TJFitz?tab=repositories "Repositories")
+[<img src="https://avatars1.githubusercontent.com/u/64603357?s=400&u=da2d17446426e2975d84ca698ef3fca4eae39233&v=4" width="100px;"/><br /><sub><b>TJ Fitzpatrick</b></sub>](https://github.com/TJFitz)<br />[💻](https://github.com/TJFitz?tab=repositories "Repositories")
 
 | Dan
 ------------ 
 
-[<img src="https://avatars1.githubusercontent.com/u/66096456?s=400&u=8ef03e754c1c081fe9ed2c8173c60f19472aa441&v=4" width="100px;"/><br /><sub><b>Dan Howe</b></sub>](https://github.com/easyacres)<br />[💻](https://github.com/easyacres?tab=repositories "Repositories")
+[<img src="https://avatars2.githubusercontent.com/u/64825652?s=400&u=12c6db94f30dee221dd6e34d769b4c444b733f8d&v=4" width="100px;"/><br /><sub><b>Dan Howe</b></sub>](https://github.com/easyacres)<br />[💻](https://github.com/easyacres?tab=repositories "Repositories")
 
 | Henry
 ------------ 
 
-[<img src="https://avatars3.githubusercontent.com/u/23424739?s=400&u=79507a3a1a2a3de915aa1997a4575b435a425fc4&v=4" width="100px;"/><br /><sub><b>Henry Liu</b></sub>](https://github.com/hl748)<br />[💻](https://github.com/hl748?tab=repositories "Repositories")
+[<img src="https://avatars1.githubusercontent.com/u/65514938?s=400&u=6aed757ff7dc46aa6f1ef504d6cce7d40f261db0&v=4" width="100px;"/><br /><sub><b>Henry Liu</b></sub>](https://github.com/hl748)<br />[💻](https://github.com/hl748?tab=repositories "Repositories")
 
